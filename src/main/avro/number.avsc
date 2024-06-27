@@ -1,0 +1,8 @@
+{
+  "type": "record",
+  "name": "Number",
+  "namespace": "br.com.pocws.kotlinclientws",
+  "fields": [
+    {"name": "number", "type": "int"}
+  ]
+}

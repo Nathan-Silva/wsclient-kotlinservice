@@ -1,0 +1,11 @@
+kafka:
+  auto-create-topics: false
+  bootstrap-servers: localhost:9092
+  pool-timeout: 1_000
+  consumers:
+    number-consumer:
+      auto-offset-reset: earliest
+      concurrency: 1
+      id: kafka-listener-number
+      topics: input-number-topic
+      group-id: number-service
