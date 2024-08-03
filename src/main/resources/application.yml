@@ -9,3 +9,7 @@ kafka:
       id: kafka-listener-number
       topics: input-number-topic
       group-id: number-service
+
+
+server:
+  port: 8088
