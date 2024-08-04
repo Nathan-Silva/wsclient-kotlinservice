@@ -52,8 +52,8 @@ tasks.named('test') {
 wsdl2java {
 	cxfVersion.set("4.0.2")
 	wsdlDir.set(file("$projectDir/src/main/resources/wsdl"))
-	generatedSourceDir.set(layout.projectDirectory.dir("src/generated/wsdl2java"))
-	packageName.set("br.com.pocws.kotlinclientws")
+	generatedSourceDir.set(layout.projectDirectory.dir("src/main/java"))
+	packageName.set("br.com.pocws.kotlinclientws.artifacts")
 	useJakarta.set(true)
 	markGenerated.set(true)
 }

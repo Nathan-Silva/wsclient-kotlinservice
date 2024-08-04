@@ -1,4 +1,4 @@
-package br.com.pocws.kotlinclientws;
+package br.com.pocws.kotlinclientws.artifacts;
 
 import jakarta.annotation.Generated;
 import jakarta.jws.WebMethod;
@@ -23,8 +23,8 @@ public interface NumberConversionSoapType {
      * Returns the word corresponding to the positive number passed as parameter. Limited to quadrillions.
      */
     @WebMethod(operationName = "NumberToWords")
-    @RequestWrapper(localName = "NumberToWords", targetNamespace = "http://www.dataaccess.com/webservicesserver/", className = "br.com.pocws.kotlinclientws.NumberToWords")
-    @ResponseWrapper(localName = "NumberToWordsResponse", targetNamespace = "http://www.dataaccess.com/webservicesserver/", className = "br.com.pocws.kotlinclientws.NumberToWordsResponse")
+    @RequestWrapper(localName = "NumberToWords", targetNamespace = "http://www.dataaccess.com/webservicesserver/", className = "br.com.pocws.kotlinclientws.artifacts.NumberToWords")
+    @ResponseWrapper(localName = "NumberToWordsResponse", targetNamespace = "http://www.dataaccess.com/webservicesserver/", className = "br.com.pocws.kotlinclientws.artifacts.NumberToWordsResponse")
     @WebResult(name = "NumberToWordsResult", targetNamespace = "http://www.dataaccess.com/webservicesserver/")
     @Generated(value = "org.apache.cxf.tools.wsdlto.WSDLToJava")
     public java.lang.String numberToWords(
@@ -37,8 +37,8 @@ public interface NumberConversionSoapType {
      * Returns the non-zero dollar amount of the passed number.
      */
     @WebMethod(operationName = "NumberToDollars")
-    @RequestWrapper(localName = "NumberToDollars", targetNamespace = "http://www.dataaccess.com/webservicesserver/", className = "br.com.pocws.kotlinclientws.NumberToDollars")
-    @ResponseWrapper(localName = "NumberToDollarsResponse", targetNamespace = "http://www.dataaccess.com/webservicesserver/", className = "br.com.pocws.kotlinclientws.NumberToDollarsResponse")
+    @RequestWrapper(localName = "NumberToDollars", targetNamespace = "http://www.dataaccess.com/webservicesserver/", className = "br.com.pocws.kotlinclientws.artifacts.NumberToDollars")
+    @ResponseWrapper(localName = "NumberToDollarsResponse", targetNamespace = "http://www.dataaccess.com/webservicesserver/", className = "br.com.pocws.kotlinclientws.artifacts.NumberToDollarsResponse")
     @WebResult(name = "NumberToDollarsResult", targetNamespace = "http://www.dataaccess.com/webservicesserver/")
     @Generated(value = "org.apache.cxf.tools.wsdlto.WSDLToJava")
     public java.lang.String numberToDollars(

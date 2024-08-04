@@ -1,5 +1,5 @@
 
-package br.com.pocws.kotlinclientws;
+package br.com.pocws.kotlinclientws.artifacts;
 
 import jakarta.annotation.Generated;
 import jakarta.xml.bind.annotation.XmlAccessType;

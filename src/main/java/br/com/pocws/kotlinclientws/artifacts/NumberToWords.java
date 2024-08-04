@@ -1,11 +1,13 @@
 
-package br.com.pocws.kotlinclientws;
+package br.com.pocws.kotlinclientws.artifacts;
 
+import java.math.BigInteger;
 import jakarta.annotation.Generated;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
 import jakarta.xml.bind.annotation.XmlType;
 
 
@@ -19,7 +21,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="NumberToWordsResult" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         <element name="ubiNum" type="{http://www.w3.org/2001/XMLSchema}unsignedLong"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -30,40 +32,41 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "numberToWordsResult"
+    "ubiNum"
 })
-@XmlRootElement(name = "NumberToWordsResponse")
+@XmlRootElement(name = "NumberToWords")
 @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.5")
-public class NumberToWordsResponse {
+public class NumberToWords {
 
-    @XmlElement(name = "NumberToWordsResult", required = true)
+    @XmlElement(required = true)
+    @XmlSchemaType(name = "unsignedLong")
     @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.5")
-    protected String numberToWordsResult;
+    protected BigInteger ubiNum;
 
     /**
-     * Obtém o valor da propriedade numberToWordsResult.
+     * Obtém o valor da propriedade ubiNum.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link BigInteger }
      *     
      */
     @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.5")
-    public String getNumberToWordsResult() {
-        return numberToWordsResult;
+    public BigInteger getUbiNum() {
+        return ubiNum;
     }
 
     /**
-     * Define o valor da propriedade numberToWordsResult.
+     * Define o valor da propriedade ubiNum.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link BigInteger }
      *     
      */
     @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.5")
-    public void setNumberToWordsResult(String value) {
-        this.numberToWordsResult = value;
+    public void setUbiNum(BigInteger value) {
+        this.ubiNum = value;
     }
 
 }

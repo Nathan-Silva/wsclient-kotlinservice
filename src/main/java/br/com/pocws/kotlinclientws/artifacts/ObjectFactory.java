@@ -1,5 +1,5 @@
 
-package br.com.pocws.kotlinclientws;
+package br.com.pocws.kotlinclientws.artifacts;
 
 import jakarta.annotation.Generated;
 import jakarta.xml.bind.annotation.XmlRegistry;
@@ -8,7 +8,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the br.com.pocws.kotlinclientws package. 
+ * generated in the br.com.pocws.kotlinclientws.artifacts package. 
  * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -25,7 +25,7 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: br.com.pocws.kotlinclientws
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: br.com.pocws.kotlinclientws.artifacts
      * 
      */
     public ObjectFactory() {

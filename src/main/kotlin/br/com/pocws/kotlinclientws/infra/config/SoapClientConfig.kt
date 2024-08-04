@@ -11,7 +11,7 @@ class SoapClientConfig {
     @Bean(name = ["marshallerConfig"])
     fun marshaller(): Jaxb2Marshaller {
         val marshaller = Jaxb2Marshaller()
-        marshaller.contextPath = "br.com.pocws.kotlinclientws"
+        marshaller.contextPath = "br.com.pocws.kotlinclientws.artifacts"
         return marshaller
     }
 

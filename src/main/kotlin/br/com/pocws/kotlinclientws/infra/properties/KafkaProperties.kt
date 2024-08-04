@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration
 @ConfigurationProperties(prefix = "kafka")
 class KafkaProperties {
 
-    var boostrapServers: String = ""
+    var bootstrapServers: String = ""
     var poolTimeout: Int = 0
     var autoCreateTopic: Boolean = false
 

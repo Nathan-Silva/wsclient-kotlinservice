@@ -1,4 +1,4 @@
-package br.com.pocws.kotlinclientws;
+package br.com.pocws.kotlinclientws.artifacts;
 
 import java.net.URL;
 import jakarta.annotation.Generated;

@@ -1,7 +1,6 @@
 
-package br.com.pocws.kotlinclientws;
+package br.com.pocws.kotlinclientws.artifacts;
 
-import java.math.BigDecimal;
 import jakarta.annotation.Generated;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -20,7 +19,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="dNum" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
+ *         <element name="NumberToWordsResult" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -31,40 +30,40 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "dNum"
+    "numberToWordsResult"
 })
-@XmlRootElement(name = "NumberToDollars")
+@XmlRootElement(name = "NumberToWordsResponse")
 @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.5")
-public class NumberToDollars {
+public class NumberToWordsResponse {
 
-    @XmlElement(required = true)
+    @XmlElement(name = "NumberToWordsResult", required = true)
     @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.5")
-    protected BigDecimal dNum;
+    protected String numberToWordsResult;
 
     /**
-     * Obtém o valor da propriedade dNum.
+     * Obtém o valor da propriedade numberToWordsResult.
      * 
      * @return
      *     possible object is
-     *     {@link BigDecimal }
+     *     {@link String }
      *     
      */
     @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.5")
-    public BigDecimal getDNum() {
-        return dNum;
+    public String getNumberToWordsResult() {
+        return numberToWordsResult;
     }
 
     /**
-     * Define o valor da propriedade dNum.
+     * Define o valor da propriedade numberToWordsResult.
      * 
      * @param value
      *     allowed object is
-     *     {@link BigDecimal }
+     *     {@link String }
      *     
      */
     @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.5")
-    public void setDNum(BigDecimal value) {
-        this.dNum = value;
+    public void setNumberToWordsResult(String value) {
+        this.numberToWordsResult = value;
     }
 
 }
