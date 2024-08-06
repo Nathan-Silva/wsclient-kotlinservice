@@ -3,6 +3,8 @@ package br.com.pocws.kotlinclientws.infra.wsclient
 import br.com.pocws.kotlinclientws.artifacts.NumberConversionSoapType
 import br.com.pocws.kotlinclientws.artifacts.NumberToWords
 import br.com.pocws.kotlinclientws.artifacts.NumberToWordsResponse
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import org.springframework.stereotype.Service
 import org.springframework.ws.client.core.WebServiceTemplate
 import org.springframework.ws.soap.client.core.SoapActionCallback
@@ -12,13 +14,13 @@ import javax.xml.namespace.QName
 @Service
 class NumberWSClient(private val webServiceTemplate: WebServiceTemplate) {
 
-    fun numberToWordsResponse(number: Int): String {
+    suspend fun numberToWordsResponse(number: Int): String = withContext(Dispatchers.IO) {
         val urlService = URL("https://www.dataaccess.com/webservicesserver/numberconversion.wso?WSDL")
         val qName = QName("http://www.dataaccess.com/webservicesserver/", "NumberConversion")
         val service = jakarta.xml.ws.Service.create(urlService, qName)
 
         val numberConversionSoapType = service.getPort(NumberConversionSoapType::class.java)
-        return numberConversionSoapType.numberToWords(number.toBigInteger())
+        numberConversionSoapType.numberToWords(number.toBigInteger())
     }
 
     fun numberToWordsResponseKotlin(number: Int): String {
